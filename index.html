@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li><br>
+                <li><a href="#about">About</a></li><br>
+                <li><a href="#projects">Projects</a></li><br>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="Nagasrivalli_resume.pdf" target="_blank" class="resume-button">Download Resume</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>I'm Naga Srivalli,</h1>
+                <img src="profile.jpg" alt="Profile Picture">
+                <p>Have a good knowledge in frontend development and done some personal projects on those technologies, gained hands-on experience as well.</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Education:</p>
+                <ul>
+                    <li>Bachelor of Technology in Electronics and Communications March 2023</li>
+                    <li>Ramachandra college of engineering RCEE, Eluru, Andhra Pradesh, India</li>
+                </ul>
+                <p>Skills:</p>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+                <p>Hobbies:</p>
+                <ul>
+                    <li>Reading Books</li>
+                    <li>Sketching Art</li>
+                    <li>Listening to music</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Sudoku Solver</h3>
+                    <p>• Developed a Sudoku Solver application using Python and backtracking algorithm.<br>
+                        • Utilized object-oriented programming principles to create a modular and maintainable codebase.<br>
+                        • Implemented a recursive approach to efficiently solve Sudoku puzzles and leveraged python's built-in data 
+                        structures to optimize the solving process.</p>
+                </div>
+                <div class="project">
+                    <h3>TO-DO List</h3>
+                    <p>• A manageable dynamic TO-DO list application created by using HTML5, CSS3 and JavaScript.<br>
+                        • Designed an intuitive and user-friendly interface with modern and responsive web design techniques.<br>
+                        • Implemented interactive functionality such as adding, editing and deleting tasks in real-time.<br>
+                        • Achieved a 80% accuracy rate in task management and synchronization.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
